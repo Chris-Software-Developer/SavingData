@@ -13,6 +13,9 @@
 		0D55EFD01FB7927D00159FA0 /* Saving_Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D55EFCE1FB7927D00159FA0 /* Saving_Data.xcdatamodeld */; };
 		0D55EFD21FB7927D00159FA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D55EFD11FB7927D00159FA0 /* Assets.xcassets */; };
 		0D55EFD51FB7927D00159FA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D55EFD31FB7927D00159FA0 /* LaunchScreen.storyboard */; };
+		0D55EFE01FB7960900159FA0 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D55EFDF1FB7960900159FA0 /* PersistenceService.swift */; };
+		0D55EFE31FB79B3100159FA0 /* Contact+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D55EFE11FB79B3100159FA0 /* Contact+CoreDataClass.swift */; };
+		0D55EFE41FB79B3100159FA0 /* Contact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D55EFE21FB79B3100159FA0 /* Contact+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		0D55EFD11FB7927D00159FA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D55EFD41FB7927D00159FA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D55EFD61FB7927D00159FA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D55EFDF1FB7960900159FA0 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		0D55EFE11FB79B3100159FA0 /* Contact+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0D55EFE21FB79B3100159FA0 /* Contact+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +63,49 @@
 			isa = PBXGroup;
 			children = (
 				0D55EFC71FB7927D00159FA0 /* AppDelegate.swift */,
-				0D55EFC91FB7927D00159FA0 /* ViewController.swift */,
-				0D55EFCB1FB7927D00159FA0 /* Main.storyboard */,
-				0D55EFD11FB7927D00159FA0 /* Assets.xcassets */,
-				0D55EFD31FB7927D00159FA0 /* LaunchScreen.storyboard */,
+				0D55EFDE1FB7936500159FA0 /* Models */,
+				0D55EFDD1FB7936200159FA0 /* Views */,
+				0D55EFDC1FB7936000159FA0 /* Controllers */,
 				0D55EFD61FB7927D00159FA0 /* Info.plist */,
 				0D55EFCE1FB7927D00159FA0 /* Saving_Data.xcdatamodeld */,
 			);
 			path = "Saving Data";
+			sourceTree = "<group>";
+		};
+		0D55EFDC1FB7936000159FA0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0D55EFC91FB7927D00159FA0 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0D55EFDD1FB7936200159FA0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D55EFCB1FB7927D00159FA0 /* Main.storyboard */,
+				0D55EFD31FB7927D00159FA0 /* LaunchScreen.storyboard */,
+				0D55EFD11FB7927D00159FA0 /* Assets.xcassets */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0D55EFDE1FB7936500159FA0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0D55EFDF1FB7960900159FA0 /* PersistenceService.swift */,
+				0D55EFE51FB79C1300159FA0 /* Core Data */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0D55EFE51FB79C1300159FA0 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				0D55EFE11FB79B3100159FA0 /* Contact+CoreDataClass.swift */,
+				0D55EFE21FB79B3100159FA0 /* Contact+CoreDataProperties.swift */,
+			);
+			path = "Core Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,9 +180,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D55EFE41FB79B3100159FA0 /* Contact+CoreDataProperties.swift in Sources */,
 				0D55EFCA1FB7927D00159FA0 /* ViewController.swift in Sources */,
+				0D55EFE01FB7960900159FA0 /* PersistenceService.swift in Sources */,
 				0D55EFC81FB7927D00159FA0 /* AppDelegate.swift in Sources */,
 				0D55EFD01FB7927D00159FA0 /* Saving_Data.xcdatamodeld in Sources */,
+				0D55EFE31FB79B3100159FA0 /* Contact+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
